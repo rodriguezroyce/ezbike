@@ -1,0 +1,241 @@
+:root{
+    --top-nav-color: #0079c4;
+    --left-nav-color: #2c405a;
+    --bg-color: #ecf5fd;
+    --gray: #96a0ad;
+    --ide-danger: #F35065;
+    --ide-green-normal: #00A881;
+    --ide-pink: #F053A8;
+    --ide-black: #080A10;
+    --ide-blue: #5094FA;
+    --light-blue: #e5f9fd;
+    --black: #181818;
+    --light-black: #9ca6ae;
+    --light-wash: #f1f5fb;
+    --light-green: #eef9f0;
+    --light-violet: #f3eefd;
+    --light-strong: #e2eaf5;
+}
+.light-blue{
+    background: var(--light-blue);
+}
+.bg-light-strong{
+    background: var(--light-strong);
+}
+
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* font-family: 'Libre Franklin', sans-serif; */
+/* font-family: 'Padauk', sans-serif; */
+/* font-family: 'Palanquin', sans-serif; */
+.fs-10{font-size: 10px;}
+.fs-11{font-size: 11px;}
+.fs-12{font-size: 12px;}
+.fs-13{font-size: 13px;}
+.fs-14{font-size: 14px;}
+.fs-16{font-size: 16px;}
+.fs-18{font-size: 18px;}
+.fs-15{font-size: 15px;}
+.fs-22{font-size: 22px;}
+.gray{
+    background: var(--gray);
+}
+.bg-light-blue{
+    background: var(--top-nav-color);
+}
+.bg-dark-blue{
+    background: var(--left-nav-color);
+}
+.bg-all{
+    background: var(--bg-color);
+}
+::-webkit-scrollbar{
+    overflow-y: scroll;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* main_dashboard ezbike */
+.ff-5{
+    font-family: 'Libre Franklin', sans-serif;
+}
+.ff-6{
+    font-family: 'Padauk', sans-serif;
+}
+/* container fluid */
+.container-fluid{
+    padding: 0;
+}
+.header_dashboard{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 0.35em;
+}
+.header_dashboard .col-md-10{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.55em;
+}
+.navheader-right{
+    display: flex;
+    padding: 0.55em;
+}
+.navheader-right li {
+    position: relative;
+}
+.navheader-right li a{
+    padding: 0.75em;
+}
+.searchPlace{
+    border: 1px solid #ddd;
+    padding: 0.55em 1rem;
+}
+.searchPlace:focus{
+    border: 1px solid #ddd;
+}
+
+.dropdown-menu{
+    min-width: 153px;
+    font-size: 13px;
+    padding: 0.35em;
+}
+.dropdown-menu button:focus{
+    box-shadow: 1px 1px 1px #ddd;
+}
+.navleft-menu{
+    padding: 1rem 0.55em 1rem 1rem;
+    
+}
+.navleft-menu li a, .navleft-menu li i{
+    font-size: 14px;
+    margin-right: 0.55em;
+    margin-left: 0.55em;
+
+}
+.navleft-menu li a i{
+    color: var(--black);
+}
+.navleft-menu li{
+    margin-top: 0.55em;
+    margin-bottom: 0.55em;
+}
+.navleft-menu li a{
+    padding: 0.75em 0.55em;
+    display: block;
+    color: var(--light-black);
+    border-radius: 6px;
+    transition: all 400ms ease-in-out;
+}
+.navleft-menu li a:hover, .navleft-menu li a.active{
+    background: var(--light-strong);
+    color: var(--black);
+}
+
+.logo{
+    width: 75px;
+    height: 75px;
+}
+#user_lessor, #user_admin{
+    padding: 1rem 1.35em 1rem 0.75em;
+}
+.bicycle-imgsize{
+    max-width: 100%;
+    object-fit: cover;
+    width: 100%;
+    height: 75px;
+}
+
+.modal-flex{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+.modal-flex .l-col-2{
+    width: 16.66%;
+}
+.modal-flex .l-col-10{
+    width: 83.33%;
+}
+@media(max-width: 765px){
+    .navleft-menu{
+        padding: 0.35em;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 0;
+    }
+    .navleft-menu li a{
+        font-size: 9px;
+    }
+}
+#admin_map{
+    width: 100%;
+    height: 60vh;
+}
+#data, #alldata{
+    display: none;
+}
+
+.dashbox{
+    width: 24%;
+    display: flex;
+    align-items: center;
+    height: 105px;
+    flex-wrap: wrap;
+}
+.dashbox .content-left{
+    width: 60%;
+    height: 100%;
+    padding: 0.75em;
+}
+.dashbox .content-right{
+    width: 40%;
+    height: 100%;
+    padding: 0.75em;
+}
+#dash-row .dashbox{
+    box-shadow: 1px 2px 1px 1px #181818;
+    border-radius: 3    px;
+}
+#mydata{
+    display: none;
+}
+#myVideo{
+    width: 100%;
+    height: 100vh;
+}
+#success_insert, #failed_insert{
+    width: 35%;
+    background: var(--ide-green-normal);
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    display: inline;
+    right: 35px;
+}
+.button.dt-button, div.dt-button, a.dt-button{
+    padding: 0.35em 0.75em !important;
+}
+#daterange{
+    padding: 0.35em 1rem !important;
+    box-shadow: 1px 1px 1px #080A10;
+    border: none;
+}
+#daterange:focus{
+    box-shadow: 1px 1px 1px #5a15e4;
+}

@@ -1,0 +1,1597 @@
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url("https://use.typekit.net/klz6cah.css");
+:root{
+    --b500: #3b82F6;
+    --b50: #EFF6FF;
+    --b700: #1D4ED8;
+    --b900: #1E3A8A;
+    --b200: #BFDBFE;
+    --b100: #DBEAFE;
+    --g900: #111827;
+    --g600: #4b5563;
+    --gr400: #34D399;
+    --ide-green-normal: #00A881;
+    --gr800: #065F46;
+    --green-light_1: #0c5540;
+    --green-light: #81c926;
+    --dark-gray: rgb(33, 37, 41);
+    --g50: #f9fafb;
+    --g100: #f3f4f6;
+    --web-wash: #F0F2F5;
+    --light-blue: rgb(229,249,253);
+    --black: rgb(24,24,24);
+    --light-black: rgb(156,166,174);
+    --light-wash: rgb(241,245,251);
+    --light-green: rgb(238,249,240);
+    --light-violet: rgb(243,238,253);
+    --light-strong: rgb(226,234,245);
+    --adobe-text: #161C32;
+    --adobe-orange: #A04625;
+    --adobe-blue: #0D65C2;
+    --indigo: #5624D0;
+}
+/* myfonts */
+/* font-family: merriweather,serif;
+font-weight: 300;
+font-style: normal; */
+
+/* font-family: hind-siliguri, sans-serif;
+
+font-weight: 600;
+
+font-style: normal; */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* fonts */
+.ff-1{
+    font-family: 'Libre Franklin', sans-serif;
+}
+.ff-2{
+    font-family: 'Padauk', sans-serif;
+}
+.ff-3{
+    font-family: 'Cedarville Cursive', cursive;
+}
+.ff-4{
+    font-family: 'Roboto', sans-serif;
+}
+.ff-5{
+    font-family: 'Libre Franklin', sans-serif;
+}
+.ff-6{
+    font-family: 'Padauk', sans-serif;
+}
+.ff-7{
+    font-family: hind-siliguri, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+.ff-8{
+    font-family: merriweather,serif;
+    font-weight: 300;
+    font-style: normal;
+}
+/* letter spacing */
+.ls-1{
+    letter-spacing: 1px;
+}
+/* background */
+.text-yellow{
+    color: rgb(253,214,99);
+}
+.bg-yellow{
+    background: rgb(253,214,99);
+}
+.navbar-background{
+    background: #fff;
+}
+.web-wash{
+    background: var(--web-wash);
+}
+.bg-orange{
+    background: var(--adobe-orange);
+}
+.text-orange{
+    color: rgb(221, 149, 13);
+}
+.bg-indigo{
+    background: var(--indigo);
+}
+.btn-adobe-orange{
+    background: var(--adobe-orange);
+    color: #fff;
+}
+.btn-adobe-orange:hover{
+    color: #fff;
+    background: #c9582f;
+}
+.btn-orange{
+    background:rgb(221, 149, 13);
+    color: #fff;
+    padding: 0.55em 1rem;
+    display: block;
+}
+.btn-orange:hover{
+    background:rgb(248, 170, 25);
+    color: #fff;
+}
+.btn-indigo{
+    background: #414698;
+    color: #fff;
+}
+.btn-indigo-outline{
+    border: 1px solid #414698;
+    color: #000;    
+    background: #fff;
+}
+.btn-indigo-outline:hover{
+    background: #414698;
+    color: #fff; 
+}
+.btn-indigo:hover{
+    background: #484da9;
+    color: #fff;
+}
+.logo{
+    max-width: 100%;
+    width: 100px;
+    height: 75px;
+
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: hind-siliguri, sans-serif;
+    font-weight: 600;
+    font-style: normal
+}
+label{
+    font-family: hind-siliguri, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+#login_page{
+    height: 95vh;
+    padding: 100px;
+}
+.s75-rounded{
+    border-radius: 50%;
+    width: 75px;
+    height: 75px;
+}
+.rent-box{
+    padding: 1rem 1.75em;
+    background: #fff;
+    box-shadow: 1px 3px 1px 1px #dcdcdc;
+    margin: 0 6px;
+    display: flex;
+}
+.rent-box .rent-box-content{
+    padding: 0 1.5rem;
+}
+.rent-box .rent-box-content h5{
+    margin-bottom: 0;
+}
+.rent-box .rent-box-content p{
+    font-family: 'Padauk', sans-serif;
+}
+.rent-box .rent-box-icon{
+    margin-top: 1rem;
+}
+.rent-box:first-child{
+    margin: 0 6px 0 0;
+}
+
+/* color */
+.bg-dark900{
+    background: var(--g900);
+}
+.bg-light-blue{
+    background: var(--top-nav-color);
+}
+.bg-dark-blue{
+    background: var(--left-nav-color);
+}
+.bg-all{
+    background: var(--bg-color);
+}
+.green-light{
+    color: var(--green-light);
+}
+.green-light-1{
+    color: var(--green-light_1);
+}
+.gr400{
+    color: var(--gr400);
+}
+#signup div{
+    line-height: 1.75em;
+}
+
+.flex-between{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#signup-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#signup-nav ul li a{
+    font-size: 13px;
+    font-family: merriweather,serif;
+    font-weight: 300;
+    font-style: normal;
+}
+#signup div button a{
+    color: #fff;
+}
+.wh-100{
+    width: 100%;
+    height: 100%;
+}
+.icon-container i{
+    margin: 0.35em 0.55em;
+}
+
+#signup div input:focus{
+    box-shadow: none;
+}
+.signup-acc{
+    border: none;
+    padding: 0.55em 1rem;
+    transition: background 400ms ease-out;
+}
+.signup-page{
+    height: 100%;
+}
+.signup-acc:hover{
+    background: #e1e1e1;
+    border-bottom: 2px solid var(--gr800);
+}
+#userRegistrationBg{
+    background: url("../img/bg_01.png") no-repeat center center/cover;
+    position: relative;
+    height: 100vh;
+}
+#already_member{
+    position: absolute;
+    top: 200px;
+}
+#service-rules{
+    list-style: upper-roman;
+}
+#service-rules li{
+    margin: 0.55em 0;
+}
+
+.f-col{
+    display: flex;
+    flex-direction: column;
+}
+
+.container-fluid{
+    padding: 0;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+/* utility class */
+.fs-10{font-size :10px;}
+.fs-11{font-size :11px;}
+.fs-12{font-size :12px;}
+.fs-13{font-size :13px;}
+.fs-14{font-size: 14px;}
+.fs-16{font-size: 16px;}
+.fs-18{font-size: 18px;}
+.fs-20{font-size :20px;}
+.fs-21{font-size :21px;}
+
+
+.autocomplete-items{
+    height: 200px;
+    display: block;
+    width: 300px;
+    overflow: hidden;
+    color: #fff;
+    padding: 0.55em;
+    font-size: 12px;
+    margin-top: 0.55em;
+    margin-left: 2rem;
+    background: #fff;
+    cursor: pointer;
+    color: #333;
+}
+.autocomplete-items div{
+    border-bottom: 1px solid #ddd;
+    line-height: 1.75em;
+    padding: 0.35em;
+    transition: all 300ms ease-out;
+}
+.autocomplete-items div:hover{
+    background: var(--green-light);
+    color: #fff;
+}
+
+.showcase{
+    height: 100vh;
+    background: url('../img/pexels-pavel-danilyuk-5807579.jpg') center center/cover;
+}
+.showcase .showcase-content{
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0, 0.7);
+}
+#main-container{
+    width: 100%;
+    height: 100%;
+}
+.main-nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 20%;
+    width: 100%;
+}
+.main-navbar{
+    display: flex;
+}
+.main-navbar li a{
+
+    font-size: 14px;
+    color: var(--adobe-text);
+    border-radius: 6px;
+    padding: 0.55em 0.75rem;
+
+    transition: all .3s ease-in-out;
+}
+.main-navbar li{
+    margin: 0 4px;
+}
+
+.main-navbar li:first-child a:first-child{
+    border: 1px solid #414698;
+    color: #000;
+}
+.main-navbar li:first-child a:first-child:hover{
+    background: #414698;
+    color: #fff;
+}
+
+
+#nav-right{
+    display: flex;
+    justify-content: flex-end; 
+}
+.recover_account{
+    width: 500px;
+    height: 276px;
+    margin: auto;
+}
+.bicycle_list{
+    width: 100%;
+    height: 85vh;
+    overflow: auto;
+}
+
+
+
+
+/* landing-page */
+.landing-page{
+    height: 80%;
+    width: 100%;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    align-items: center;
+}
+.searchLocator{
+    width: 100%;
+}
+
+
+.searchLocation, .submitLocation{
+    width: 100%;
+    padding: 0.35em;
+    
+    border: none;
+    transition: all 400ms ease-out;
+    color: #fff;
+}
+
+.submitLocation:hover{
+    background: var(--green-light_1);
+
+}
+.searchLocation{
+    outline: none;
+    width: 90%;
+    color: #111827;
+}
+.icon{
+    width: 10%;
+    background: #fff;
+    padding: 0.35em;
+}
+.submitLocation{
+    background: var(--green-light);
+    color: #fff;
+}
+.box-header{
+    font-family: var(--bs-font-sans-serif);
+}
+.img-Container{
+    width: 100%;
+    height: 100%;
+}
+
+
+/* box */
+.box{
+    position: relative;
+    display: block;
+}
+.text-indigo{
+    color: #414698;
+}
+.text-inside{
+    position: absolute;
+    bottom: 0px;
+    padding: 0.35em;
+    left: 0px;
+    text-align: left;
+    background: rgba(0,0,0,0.7);
+    width: 100%;
+    margin-bottom: 0;
+}
+#places .col-md-3{
+    padding: 0;
+}
+.btns{
+    background: none;
+    border: none;
+    color: #bcbcbc;
+    padding: 0 1rem;
+}
+.modal-header-title{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+   
+}
+.modal-header-title button.active{
+    border-bottom: 2px solid var(--gr800);
+    color: var(--gr800);
+}
+.btn-close{
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    
+}
+.error_validation{
+    color: rgb(232, 49, 49);
+    font-size: 12px;
+    margin-left: 4px;
+}
+#lenderForm{
+    display: none;
+}
+#form-search{
+    width: 100%;
+}
+/* top-navigation */
+.top-navigation{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.55em 1rem;
+}
+.top-nav-right{
+    display: flex;
+}
+.top-nav-right li a{
+    padding: 1rem;
+    color: var(--g900);
+    font-size: 14px;
+}
+.top-nav-right li:first-child a{
+    font-size: 16px;
+    
+}
+.top-nav-right li:last-child a{
+  
+ 
+    padding: 0.55em 1rem;
+}
+#lessor_map{
+    width: 100%;
+    height: 60vh;
+}
+#map{
+    width: 100%;
+    height: 100%;
+    padding: 0;
+
+}
+.client-card{
+    width: 50%;
+    height: 270px;
+    overflow: hidden;
+    transition: all 500ms ease;
+    
+}
+.client-content{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.lessorDescription{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+}
+.lessorDescription .top{
+    width: 100%;
+    height: 55%;
+}
+.lessorDescription .bottom{
+    width: 100%;
+    height: 45%;
+    display: flex;
+}
+.lessorDescription .bottom .left{
+    width: 75%;
+    height: 100%;
+    background: linear-gradient(to left, rgba(0,0,0,0.3), rgba(0,0,0,0.5));
+    line-height: 1em;
+}
+.lessorDescription .bottom .right{
+    width: 25%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(0,0,0,0.3), rgba(0,0,0,0.5));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dashboard-navleft li .row .col-md-9 a{
+    width: 100%;
+    display: inline-block;
+}
+.dashboard-navleft li .row .col-md-9 a:hover, .dashboard-navleft li .row .col-md-9 a.current{
+    background: #494d52;
+}
+
+.profile{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background: rgb(211, 211, 211);
+}
+.info{
+    overflow: hidden;
+}
+.profile img{
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+}
+.main-section{
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+}
+.column-5{
+    width: 50%;
+    height: 89vh;
+    position: relative;
+}
+
+.column-7{
+    width: 50%;
+    overflow-y: hidden;
+    height: 89vh;
+    box-sizing: content-box;
+
+}
+::-webkit-scrollbar{
+    display: none;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+.column-7 .column7-inside{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    align-content: flex-start;
+    scrollbar-width: none;
+}
+#mydata{
+    display: none;
+}
+#cityInput{
+    width: 400px;
+    border-right: none;
+}
+#location-input{
+    width: 768px;
+}
+#searchBtn{
+    border-left: none !important;
+}
+
+
+#brandName{
+
+    border: 5px solid var(--web-wash);
+    border-radius: 12px;
+}
+
+.column-left{
+    width: 66.67%;
+}
+.column-right{
+    width: 33.33%;
+}
+.main-shop{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    padding: 1rem;
+}
+
+
+/* client-Page */
+.cover-page{
+    width: 100%;
+}
+.merchant-photo{
+    width: 100%;
+    height: 50vh;
+    object-fit: cover;
+}
+.bicycle-photo{
+    width: 100%;
+    height: 250px;
+    object-fit: contain;
+    border-radius: 6px;
+}
+.img-size{
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+.business-information{
+    background: #191919;
+    color: #fff;
+}
+
+/* validId */
+#validId ul li{
+    list-style: circle;
+}
+/* lessor dashboard */
+.sidenav{
+    height: 100vh;
+    padding: 1rem;
+    border-right: 4px solid #e1e1e1;
+}
+.main{
+    padding: 0.35em 1rem;
+}
+#top-main{
+    background: #fff;
+    padding: 0.35em;
+    border-bottom: 1px solid #bcbcbc;
+}
+#nav_top_right{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+   
+}
+#nav_top_right ul li a{
+    padding: 0.75em 0.35em;
+}
+#nav_top_right ul li:last-child a:last-child{
+    padding-right: 1.5em;
+}
+.navright_utilities{
+    display: flex;
+    align-items: center;
+  
+}
+.bicycle-imgsize{
+    max-width: 100%;
+    object-fit: cover;
+    width: 100%;
+    height: 75px;
+}
+.navright_utilities li{
+    position: relative;
+}
+.dashboard-navleft{
+    padding: 0.35em;
+}
+.dashboard-navleft li{
+    margin: 0.55em 0;
+
+}
+.dashboard-navleft li a{
+    padding: 0.35rem;
+    color: #c0c0c0;
+}
+.dashboard-navleft li a i{
+    padding: 1rem 1.55em;
+}
+.dashboard-navleft li a:hover{
+    color: #e9e9e9;
+}
+
+#success_insert, #failed_insert{
+    width: 35%;
+    background: var(--ide-green-normal);
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    display: inline;
+    right: 35px;
+    z-index: 66;
+}
+#failed_insert{
+    background: rgb(232, 49, 49);
+        
+}
+#bannerPreview{
+    max-width: 180px;
+}
+#shop_info{
+    outline: #ddd dotted 1px;;
+}
+#filters{
+    padding: 0 1rem;
+}
+.bike_types{
+    padding: 0.55em;
+    background: #f2f2f2;
+}
+.card-img-top{
+    height: 175px;
+    object-fit: cover;
+}
+.user_profile{
+    width: 40px;
+    height: 40px;
+}
+.product_container{
+    width: 100%;
+    height: 60vh;
+}
+.product_item{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.rounded_item{
+    width: 95%;
+    height: 95%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+#booking_rates{
+    position: sticky;
+   
+    top: 0;
+    right: 40px;
+    z-index: 1;
+}
+#lessor_data{
+    display: none;
+}
+
+.timeline .events {
+    position: relative;
+    background-color: #bbbbbb;
+    height: 3px;
+    width: 100%;
+    border-radius: 4px;
+    margin: 5em 0;
+   }
+  
+  .timeline .events ol {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  
+  .timeline .events ul {
+    list-style: none;
+  }
+  
+  .timeline .events ul li {
+    display: inline-block;
+    width: 24.65%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .timeline .events ul li a {
+    font-family: 'Arapey', sans-serif;
+    font-style: italic;
+    font-size: 1.25em;
+    color: #606060;
+    text-decoration: none;
+    position: relative;
+    top: -32px;
+  }
+  
+  .timeline .events ul li a:after {
+    content: '';
+    position: absolute;
+    bottom: -25px;
+    left: 50%;
+    right: auto;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border: 2px solid #606060;
+    background-color: #fff;
+    transition: 0.3s ease;
+    transform: translateX(-50%);
+  }
+  
+  .timeline .events ul li a:hover::after {
+    background-color: rgb(232, 49, 49);
+    border-color: rgb(232, 49, 49);
+  }
+  
+  .timeline .events ul li a.selected:after {
+    background-color: rgb(232, 49, 49);
+    border-color: rgb(232, 49, 49);
+  }
+              
+  .events-content {
+    width: 100%;
+    height: 100px;
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;      
+    justify-content: left;
+  }
+  
+  .events-content li {
+    display: none;
+    list-style: none;
+  }
+  
+  .events-content li.selected {
+    display: initial;
+  }
+  
+  .events-content li h2 {
+    font-family: 'Frank Ruhl Libre', serif;
+    font-weight: 500;
+    color: #919191;
+    font-size: 2.5em;
+  }
+  .about_us{
+
+      width: 100%;
+     
+  }
+  .about_logo{
+      width: 100%;
+      height: 100%;
+  }
+
+#itemdata{
+    display: none;
+}
+#rentdata{
+    display: none;
+}
+#lessormap{
+    width: 100%;
+    height: 40vh;
+}
+
+.rentmaps{
+    width: 100%;
+    height: 40vh;
+}
+.gm-style .gm-style-iw-c{
+    padding: 0 !important;
+}
+
+/* footer */
+.footer-bg{
+    background: #F2F2FB;
+}
+#footer-content div ul li a{
+    color: #8B8CA0;
+    border-radius: 12px;
+    padding: 8px;
+}
+#footer-content div ul li{
+    margin-top: 1rem;
+}
+#footer-content div ul li a:hover{
+    background: #F2F2FB;
+    color: #292D45;
+}
+#footer-content div h6{
+    color: #F55985;
+}
+.footer-links li a{
+    color: var(--b200);
+}
+.footer-links li a:hover{
+    text-decoration: underline;
+}
+/* ratings */
+.rating > span:hover:before {
+    content: "\2605";
+    position: absolute;
+    
+ }
+ .rating {
+    unicode-bidi: bidi-override;
+    direction: rtl;
+  }
+  .rating > span:hover:before,
+  .rating > span:hover ~ span:before {
+     content: "\2605";
+     position: absolute;
+     color: rgb(255,205,60);
+  }
+
+  .rating {
+    unicode-bidi: bidi-override;
+    direction: rtl;
+    font-size: 42px;
+  }
+  .rating > span {
+    display: inline-block;
+    position: relative;
+    width: 1.1em;
+    padding: 0 1rem;
+  
+  }
+  .rating > span:hover:before,
+  .rating > span:hover ~ span:before {
+     content: "\2605";
+     position: absolute;
+  }
+  .ratings-message{
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      color: #fff;
+      padding: 0.55em 1rem;
+      z-index: 999999;
+      background: #198754;
+  }
+  #comments{
+      resize: none;
+  }
+  #success_report{
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 88;
+  }
+  #dashboard-box{
+      padding: 1rem;
+  }
+  #dashboard-box .dash-box{
+      display: flex;
+      justify-content: center; 
+      align-items: center;
+      flex-direction: column;
+      height: 100px;
+      margin: 0 0.55em;
+      border-radius: 6px;
+    
+  }
+  #dashboard-box .dash-box h4{
+      margin-bottom: 0;
+  }
+
+  /* faqs */
+  .faqs-box{
+      border: none !important;
+      background: #fff;
+      border-radius: 6px;
+      height: 23vh;
+      text-align: center;
+      margin: 1rem 4px;
+
+  }
+  .faqs-box .top{
+    width: 100%;
+    height: 66.66%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .faqs-box .top i{
+      color: var(--b500);
+      -webkit-text-stroke-width: 2px;
+  }
+  .faqs-box .bottom{
+      width: 100%;
+      height: 33.33%;
+  }
+  .results{
+      width: 769px;
+      margin: 0 auto;
+      height: auto;
+      padding: 4rem;
+  }
+  .results h3{
+      text-align: center;
+  }
+  #header-nav{
+      display: flex;
+      justify-content: space-between;
+  }
+  #row_filter{
+      display: flex;
+      flex-wrap: wrap;
+  }
+  #booking-page{
+      display: flex;
+      width: 100%;
+      padding: 3rem 0;
+   
+  }
+  #booking-item{
+      display: none;
+  }
+  #payment-cart{
+    height: 60vh;   
+  }
+
+  .user_info{
+      display: grid;
+      grid-template-columns: auto auto auto;
+      grid-gap: 30px;
+      padding: 0.55em;
+  }
+  
+
+  /* small screen laptops */
+@media screen and (max-width: 1024px) and (min-width: 769px){
+    /* index php */
+    .showcase{
+        height: 70vh;
+    }
+    #location-input{
+        width: 420px;
+    }
+    .btn a{
+        font-size: 18px;
+    }
+    .logo{
+        height: 100px;
+    }
+    .main-navbar li a{
+        font-size: 18px;
+    }
+    #about_us{
+        flex-direction: column;
+    }
+    .about_logo{
+        height: 150px;
+    }
+    #about_title{
+        text-align: center;
+    }
+    #about_p1, #about_p2{
+        font-size: 18px;
+    }
+    /* search php */
+    /* client-card */
+    .lessorDescription .top{
+        height: 60%;
+    }
+    .lessorDescription .bottom{
+        height: 40%;
+        flex-direction: column;
+    }
+    .lessorDescription .bottom .left h5{
+        font-size: 14px !important;
+    }
+    .lessorDescription .bottom .left div{
+        font-size: 14px !important;
+    }
+    .lessorDescription .bottom .left div small{
+        font-size: 10px !important;
+    }
+    .lessorDescription .bottom .left div:last-child{
+        margin: 0 !important;
+        font-size: 13px !important;
+        margin-top: 8px !important;
+    }
+    .lessorDescription .bottom .right{
+        width: 100%;
+        -ms-flex-order: 1;
+        order: 1;
+        display: none;
+    }
+    .lessorDescription .bottom .left{
+        order: 2;
+        width: 100%;
+    }
+    #booking-page{
+        flex-direction: column;
+    }
+    #product-info{
+        width: 100%;
+        order: 2;
+    }
+    #booking-info{
+        width: 100%;
+        order: 1;
+    }
+    #booking-item{
+        display: block;
+    }
+    #main-item{
+        display: none;
+    }
+
+}
+/* ipads tables sizes */
+@media screen and (max-width: 768px) and (min-width: 481px){
+    /* index php */
+    #shop-banner{
+        width: 100px;
+        height: 100px;
+    }
+    #bike-brand{
+        text-align: center;
+    }
+    #cityInput{
+        width: 200px;
+
+    }
+    #location-input{
+        width: 320px;
+    }
+    .container{
+        max-width: 100%;
+
+    }
+    #nav-left{
+        width: 41.66%
+    }
+    #logo_container{
+        width: 16.67%;
+    }
+    #nav-right{
+        width: 41.66%;
+    }
+    .rent-box{
+        flex-direction: column;
+        text-align: center;
+        padding: 0.35em;
+    }
+    .rent-box .rent-box-content{
+        padding: 0.35em;
+    }
+    #place_header{
+        text-align: center !important;
+    }
+    #places .col-md-3{
+        width: 50%;
+    }
+    #learn_more{
+        display: none;
+    }
+    .col-3{
+        width: 33.33%;
+    }
+    .col-2{
+        width: 33.33%;
+    }
+    #footer-container{
+        padding: 0.35em !important;
+    }
+    #footer-content{
+        justify-content: center;
+  
+    }
+    #learn_more, #howtorents, #site{
+        padding: 0.35em 1rem !important;
+    }
+    #social{
+        flex-direction: row !important;
+        flex-wrap: nowrap;
+    }
+
+
+    /* search.php */
+    #navbar .col-md-1{
+        width: 25%;
+    }
+    #navbar .col-md-11{
+        width: 83.33%;
+    }
+    .lessorDescription .top{
+        height: 60%;
+    }
+    .lessorDescription .bottom{
+        height: 40%;
+        flex-direction: column;
+    }
+    .lessorDescription .bottom .left h5{
+        font-size: 14px !important;
+    }
+    .lessorDescription .bottom .left div{
+        font-size: 14px !important;
+    }
+    .lessorDescription .bottom .left div small{
+        font-size: 10px !important;
+    }
+    .lessorDescription .bottom .left div:last-child{
+        margin: 0 !important;
+        font-size: 13px !important;
+        margin-top: 8px !important;
+    }
+    .lessorDescription .bottom .right{
+        width: 100%;
+        -ms-flex-order: 1;
+        order: 1;
+        display: none;
+    }
+    .lessorDescription .bottom .left{
+        order: 2;
+        width: 100%;
+    }
+    .client-card{
+        width: 100%;
+    }
+    #panLocation{
+        font-size: 14px !important;
+    }
+    button{
+        font-size: 14px !important;
+    }
+
+    /* product-item */
+    #booking-page{
+        flex-direction: column;
+    }
+    #product-info{
+        width: 100%;
+        order: 2;
+    }
+    #booking-info{
+        width: 100%;
+        order: 1;
+    }
+    #booking-item{
+        display: block;
+    }
+    #main-item{
+        display: none;
+    }
+
+    /* payment */
+    #payment-cart{
+        height: 100% !important;   
+      }
+
+}
+/* smartphones */
+@media screen and (max-width: 480px){
+    /* index php */
+    #about_us{
+        flex-direction: column;
+    }
+    #learn_more{
+        display: none;
+    }
+    #location-input{
+        width: 100%;
+    }
+
+    #main-container{
+        padding: 0;
+    }
+    .btn a{
+        font-size: 12px;
+    }
+    .logo{
+        width: 100%;
+        height: 75px;
+    }
+    .main-navbar li a{
+        font-size: 10px;
+    }
+    #howtorent h3{
+        text-align: center !important;
+    }
+    .rent-box{
+        flex-direction: column;
+        text-align: center;
+        padding: 0.35em;
+        width: 50% !important;
+    }
+    .rent-box .rent-box-content{
+        padding: 0.35em;
+    }
+    #howtorent_container{
+        padding: 0 !important;
+    }
+    #howtorent_header{
+        text-align: center !important;
+    }
+    .about_logo{
+        height: 100px;
+    }
+    #places .col-md-3{
+        width: 50%;
+    }
+    #howItWorks{
+        padding: 0 !important;
+    }
+    #whyus{
+        margin: 1rem 0;
+        flex-direction: column !important;
+    }
+    #whyus .col-md-6{
+        width: 100%;
+    }
+    #place_header{
+        text-align: center !important;
+    }
+    .col-3{
+        width: 33.33%;
+    }
+    .col-2{
+        width: 33.33%;
+    }
+    #footer-logo{
+        display: none;
+    }
+    p{
+        font-size: 12px;
+    }
+    h5{
+        font-size: 14px;
+    }
+    .container{
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        padding: 0 !important;
+    }
+    #learn_more, #howtorents, #site{
+        padding: 0.35em 1rem !important;
+    }
+    #howtorents, #learn_more, #site{
+        padding: 0.15em !important;
+    }
+    #howtorents ul li a, #site ul li a{
+        font-size: 12px !important;
+    }
+    .footer{
+        padding: 0 2rem;
+    }
+
+    /* nav-bar */
+    #nav-left{
+        width: 41.66%;
+        order: 2 !important;
+    }
+    #nav-left .btn a{
+        font-size: 10px !important;
+    }
+    #nav-left .searchBtn{
+        font-size: 10px !important;
+    }
+    #logo_container{
+        width: 16.67%;
+       
+    }
+    #nav-right{
+        width: 41.66%;
+        order: 1 !important;
+    }
+    #header-nav{
+        display: flex;
+        justify-content: space-between;
+    }
+    #header-nav form{
+        width: 200px;
+    }
+
+    .landing-page{
+        height: 100%;
+    }
+    #shop-banner{
+        width: 100px;
+        height: 100px;
+    }
+    #bike-brand{
+        text-align: center;
+    }
+
+    /* search.php */
+    #navbar{
+        width: 100%;
+        flex-direction: column !important;
+        -ms-flex-direction: column !important;
+
+    }
+    #navbar div a img{
+        width: 100px;
+        height: 100px !important;
+    }
+
+    #navbar .col-md-3{
+        width: 100%;
+        text-align: center;
+    }
+    #navbar .col-md-9{
+        width: 100%;
+    }
+    .lessorDescription .top{
+        height: 60%;
+    }
+    .lessorDescription .bottom{
+        height: 40%;
+        flex-direction: column;
+    }
+    .lessorDescription .bottom .left h5{
+        font-size: 14px !important;
+    }
+    .lessorDescription .bottom .left div{
+        font-size: 14px !important;
+    }
+    .lessorDescription .bottom .left div small{
+        font-size: 10px !important;
+    }
+    .lessorDescription .bottom .left div:last-child{
+        margin: 0 !important;
+        font-size: 13px !important;
+        margin-top: 8px !important;
+    }
+    .lessorDescription .bottom .right{
+        width: 100%;
+        -ms-flex-order: 1;
+        order: 1;
+        display: none;
+    }
+    .lessorDescription .bottom .left{
+        order: 2;
+        -ms-flex-order: 2;
+        width: 100%;
+    }
+    .client-card{
+        width: 50%;
+    }
+    #panLocation{
+        font-size: 14px !important;
+    }
+    button{
+        font-size: 14px !important;
+    }
+    .main-section{
+        flex-direction: column !important;
+    }
+    .main-section .column-5{
+        width: 100%;
+        height: 50vh;
+    }
+    .main-section .column-7{
+        width: 100%;
+    }
+    #row_filter{
+        flex-direction: column;
+    }
+
+    #row_filter .col{
+        width: 100% !important;
+        display: block;
+    }
+    #shop-info .col-md-10{
+        text-align: center;
+    }
+    #address{
+        text-align: center;
+        justify-content: center;
+    }
+    #user_img .col-md-1{
+        width: 16.67%;
+    }
+    #booking-page{
+        flex-direction: column;
+        padding: 0.55em 0;
+    }
+    #booking-item{
+        display: block;
+    }
+    #main-item{
+        display: none;
+    }
+    #product-info{
+        order: 2;
+    }
+    #booking-info{
+        order: 1;
+    }
+    #booking-container{
+        padding: 0 !important;
+    }
+    #login_page{
+        padding: 0 !important;
+    }
+    #ezbike_logo{
+        width: 100px;
+        height: 100px;
+    }
+    #hop-ride{
+        font-size: 14px;
+    }
+    #login-container{
+        padding: 0 !important;
+    }
+    #login-title{
+        text-align: center;
+    }
+    #login_page a{
+        font-size: 12px;
+    }
+    #userRegistrationBg{
+        height: 40vh !important;
+        order: 2;
+    }
+    #already_member{
+        top: 40px;
+    }
+    .logo{
+        width: 100px;
+        height: 100px;
+    }
+    #shopping-cart{
+        font-size: 10px;
+    }
+    .table{
+        font-size: 10px;
+    }
+
+}
